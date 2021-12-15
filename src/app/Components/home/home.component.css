@@ -76,15 +76,73 @@ font-weight: 800;
 
 /* Portfolio Element*/
 
-.portfolio{
+.navMenu{
     
     position: absolute;
-    padding: 5px;
-    right: 2%;
-    top: 5%;
+    padding: 10px;
+    right: 10%;
+    
+    
     }
+.navMenu a{
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: inline-block;
+    padding-right: 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: monospace;
+}
 
+.navMenu a:hover{
+    color: #9c581f;
+}
 
+.navMenu .dot{
+    width: 6px;
+    height: 6px;
+    background-color: #f6f4e6;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(55px);
+    transform: translateX(55px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(170px);
+    transform: translateX(170px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+.navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(275px);
+    transform: translateX(275px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(375px);
+    transform: translateX(375px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
     /* Home Introduction Content*/
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -97,17 +155,23 @@ font-weight: 800;
     display: flex;
     flex-flow: column;
 }
-
 .home-content h1{
+    font-size: 2.5vw;
+}
+
+.home-content .content{
     position: relative;
     font-size: 2.5vw;
     color: transparent;
     -webkit-text-stroke: 0.1vw #9c581f;
     text-transform: uppercase;
+    overflow: hidden;
+    animation: animate-intro 2s ease-in;
+    white-space: pre;
 
 }
 
-.home-content h1::before{
+.home-content .content::before{
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -119,8 +183,52 @@ font-weight: 800;
     border-right: 2px solid #e65817;
     white-space: pre;
     overflow: hidden;
-    
-   animation: animate-context 4s linear infinite;
+   animation: animate-context 6s linear infinite;
+   animation-delay: 4ms;    
+
+}
+
+.line{
+    animation: animate-line 1s ease-in-out;
+}
+
+.button-container{
+    display: flex;
+    align-content: center;
+    margin-top: 2%;
+    animation: animate-button 1.2s ease-in-out;
+}
+.home-content .content-button{
+  cursor: pointer;
+  border: 1px solid #9c581f;
+  border-radius: 10px;
+  outline: none;
+  width: 50%;
+  background-color: transparent;
+  color:  #9c581f;
+}
+
+.home-content .content-button:hover
+{
+  color: #e65817;
+  border: 1px solid #e65817;
+  
+}
+
+.home-content .intro-text{
+    white-space: pre;
+
+    overflow: hidden;
+    animation: animate-intro 1.5s ease-in-out;
+}
+@keyframes animate-intro{
+    0%,10%{
+        width: 0%;
+    }
+   
+   90%{
+       width: 100%;
+   }
 }
 
 @keyframes animate-context{
@@ -131,4 +239,29 @@ font-weight: 800;
        width: 100%;
    }
 
+}
+
+@keyframes animate-line {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+   1%{
+       opacity: 1;
+   }
+   90%{
+       width: 100%;
+   }
+}
+
+@keyframes animate-button{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
