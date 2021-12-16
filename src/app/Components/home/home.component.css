@@ -121,7 +121,7 @@ font-weight: 800;
   }
   .navMenu a:nth-child(2):hover ~ .dot {
     -webkit-transform: translateX(170px);
-    transform: translateX(170px);
+    transform: translateX(160px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -129,7 +129,7 @@ font-weight: 800;
   
 .navMenu a:nth-child(3):hover ~ .dot {
     -webkit-transform: translateX(275px);
-    transform: translateX(275px);
+    transform: translateX(260px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -137,7 +137,7 @@ font-weight: 800;
   
   .navMenu a:nth-child(4):hover ~ .dot {
     -webkit-transform: translateX(375px);
-    transform: translateX(375px);
+    transform: translateX(345px);
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     opacity: 1;
@@ -183,8 +183,8 @@ font-weight: 800;
     border-right: 2px solid #e65817;
     white-space: pre;
     overflow: hidden;
-   animation: animate-context 6s linear infinite;
-   animation-delay: 4ms;    
+   animation: animate-context 5s linear infinite;   
+   animation-delay: 1.8s;
 
 }
 
@@ -196,7 +196,7 @@ font-weight: 800;
     display: flex;
     align-content: center;
     margin-top: 2%;
-    animation: animate-button 1.2s ease-in-out;
+    animation: animate-button 1.4s ease-in-out;
 }
 .home-content .content-button{
   cursor: pointer;

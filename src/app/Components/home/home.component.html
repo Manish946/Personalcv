@@ -1,24 +1,27 @@
-<div class="home">
+<div id="home" class="home">
 
 <div class="nav-bar">
 <!-- LOGO -->
   <div class="logo">
-      <button class="logo-button">
-          <div class="button-content">
-            <h1>MS</h1>
-            <h1>MS</h1>
-          </div>
-        
-      </button>
+    <a href="#home">    
+        <button class="logo-button">
+            <div class="button-content">
+              <h1>MS</h1>
+              <h1>MS</h1>
+            </div>        
+        </button>    
+    </a>
+
+      
   </div>
 
 <!-- Portfolio -->
 
   <div class="navMenu" >   
     
-    <a href="#"> <span style="font-size: 1.1em; color: #9c581f; font-family:monospace;">01.</span> About</a>
-    <a href="#">  <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;" >02.</span>Experience</a>
-    <a href="#"> <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;">03.</span>Work</a>
+    <a href="#about"> <span style="font-size: 1.1em; color: #9c581f; font-family:monospace;">01.</span> About</a>
+    <a href="#portfolio">  <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;" >02.</span>Portfolio</a>
+    <a href="#"> <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;">03.</span>CV</a>
     <a href="#"> <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;">04.</span>Contact</a>
 
     <div class="dot"></div>
@@ -44,4 +47,5 @@
 </div>
 </div>
 
-<app-about></app-about>
+<app-about id="about"></app-about>
+<app-portfolio id="portfolio"></app-portfolio>

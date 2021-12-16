@@ -14,13 +14,21 @@
     flex-flow: column;
     width: 100%;
 }
+.about-container{
+    display: grid;
+    grid-template-columns: 700px;
+    grid-gap: 35px;
+    padding: 10px;
+}
 
 .about-headline{
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 700px;
     font-family: monospace;
     font-size: 1.9em;
+    grid-row: 1;
+
 }
 
 .about-headline::after{
@@ -31,14 +39,19 @@
    background-color: rgb(122, 121, 121);
 }
 
-.about-content .about-text{
-    background-color: yellowgreen;
-    padding: 300px;
-    position: relative;
-    width: 20%;
+
+
+.about-container .about-text{
+    text-align: left;
+    grid-column: 1 / span 1;
+    font-family: monospace;
+    font-size: 1.4em;
+    padding: 0%;
+    margin: 0%;
 }
-.about-content .about-text .picture{
-    position: absolute;
-    background-color: tomato;
-    padding: 60px;
+
+.about-container .picture{
+    text-align: center;
+    grid-column: 2 / span 1;
 }
+
