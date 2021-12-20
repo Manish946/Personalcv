@@ -1,8 +1,56 @@
-<div class="logo">
+<div id="home" class="home">
 
+<div class="nav-bar">
+<!-- LOGO -->
+  <div class="logo">
+    <a href="#home">    
+        <button class="logo-button">
+            <div class="button-content">
+              <h1>MS</h1>
+              <h1>MS</h1>
+            </div>        
+        </button>    
+    </a>
+
+      
+  </div>
+
+<!-- Portfolio -->
+
+  <div class="navMenu" >   
+    
+    <a href="#about"> <span style="font-size: 1.1em; color: #9c581f; font-family:monospace;">01.</span> About</a>
+    <a href="#portfolio">  <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;" >02.</span>Portfolio</a>
+    <a href="#cv"> <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;">03.</span>CV</a>
+    <a href="#contact"> <span style="font-size: 1.1em; color: #9c581f;font-family:monospace;">04.</span>Contact</a>
+
+    <div class="dot"></div>
+  </div>
 </div>
 
+<!-- Home page Content -->
 
-<div class="portfolio">
-
+<div class="home-content">
+    <div>
+        <h1 class="intro-text">Hi,</h1>
+        <h1 class="intro-text">I'm Manish,</h1>
+        <h1 data-text="Student Software Developer" class="content">Student Software Developer</h1>
+        <h3 class="intro-text" style="font-weight: lighter; color: gray;">Front End & Back End Developer</h3>
+        <hr class="line">
+        <a style="text-decoration: none" href="mailto:manishestha@gmail.com">
+        <div class="button-container">
+            <button class="content-button">
+                <h2 style="font-weight: lighter; ">Contact me!</h2>
+            </button>
+        </div>
+        </a>
+    </div>
+    
 </div>
+</div>
+
+<app-about id="about"></app-about>
+<app-portfolio id="portfolio"></app-portfolio>
+<app-cv id="cv"></app-cv>
+<app-contact id="contact"></app-contact>
+<app-footer></app-footer>
