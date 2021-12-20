@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    color: rgb(174, 181, 187);
+}
+.list
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
