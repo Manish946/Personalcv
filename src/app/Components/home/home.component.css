@@ -4,14 +4,20 @@
   /*Flexes new element in column flow.*/
   flex-flow: column;
   height: 100%;
+  overflow: visible;
+  justify-content: space-around;
+  align-self: baseline 
 }
 
 /*Parent Nav DIV with 2 Absolute positioned element*/
 .nav-bar {
-  position: relative;
-
+  position:sticky;
+  position: -webkit-sticky;
+  top: 0;
   padding: 50px;
   flex: 0 1 auto;
+  display: block;
+
 }
 
 /*---------------------------------------------------------------------------------------------------------*/
@@ -20,6 +26,7 @@
   position: absolute;
   left: 10%;
   font-family: "Poppins", sans-serif;
+  margin-top: -7px;
 }
 .logo-button {
   background-color: transparent;
@@ -237,6 +244,11 @@
 
 .home-content .intro-text-small{
     font-size: 1.2vw;
+    overflow: hidden;
+    animation: animate-intro 1.5s ease-in-out;
+    line-height: 2.5vw;
+  white-space: pre;
+
 }
 @keyframes animate-intro {
   0%,
@@ -285,3 +297,15 @@
     opacity: 1;
   }
 }
+
+
+
+
+/* Responsive */
+
+@media (max-width:500px){
+
+
+
+}
+
