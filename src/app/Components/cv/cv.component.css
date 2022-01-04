@@ -3,6 +3,7 @@
     /*Flexes new element in column flow.*/
     flex-flow: column;
     height: 100%;
+    width: 100%;
 }
 
 
@@ -55,3 +56,21 @@
     grid-column: 1 / span 1;
 }
 
+@media (max-width: 1080px) {
+
+    .cv-container {
+        max-width: 80%;
+        left: 0%;
+        right: 0%;
+      }
+
+
+      .cv{
+        display: flex;
+        /*Flexes new element in column flow.*/
+        flex-flow: column;
+        height: 110%;
+        width: 100%;
+    }
+
+}

@@ -3,14 +3,15 @@
   flex-flow: column;
   height: 170%;
   font-family: monospace;
+  width: 100%;
 }
 
 .portfolio .portfolio-content {
   flex: 1 1 auto;
-
+  width: 100%;
   align-items: center;
   flex-flow: column;
-  width: 100%;
+
   display: flex;
 }
 .portfolio-container {
@@ -24,7 +25,7 @@
   display: flex;
   align-items: center;
   width: 1000px;
-  font-size: 1.9em;
+  font-size: 1.9vw;
   grid-column: 1 / span 2;
 }
 
@@ -41,52 +42,32 @@
   grid-template-columns: 1000px;
 }
 
-.project-picture {
-  padding: 20px;
-  grid-row: 1;
-  grid-column: 1;
-  position: relative;
-  filter: opacity(0.5) drop-shadow(0 0 0 #112240);
-}
-.project-picture:hover {
-  filter: opacity(1);
-}
-.project-overview {
-  padding: 20px;
-  grid-row: 1;
-  grid-column: 2;
-  text-align: right;
+/* PROJECTS*/
+.projects {
+  padding: 40px;
+  text-align: center;
+  grid-column: 1 / span 1;
+  display: grid;
+  grid-template-columns: 420px;
+  grid-gap: 20px;
+  padding: 10px;
 }
 
+/* GLOBAL CSS For Portfolio*/
 .featured-project {
   color: #9c581f;
   font-size: 2vh;
   line-height: 2vh;
 }
 
-.project-title {
-  font-size: 2.8em;
-  font-family: sans-serif;
-  color: rgb(219, 217, 217);
-
-}
-.project-description {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.1em;
-  background-color: #112240;
-  padding: 15px;
-  border-radius: 2px;
-  border: #112240 solid 2px;
-  color: rgb(153, 153, 153);
-  font-weight: lighter;
-  position: relative;
-  z-index: 1;
+.link-container {
+  padding: 0%;
 }
 
 .project-tools {
   list-style: none;
 }
+
 .project-tools a {
   text-decoration: none;
   display: inline-block;
@@ -109,44 +90,21 @@
   color: #8096bb;
 }
 
-.project-tools-2 {
-  list-style: none;
-
-}
-.project-tools-2 a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 2px;
-  margin-right: 15px;
-  font-size: 1.3em;
-  color: rgb(163, 159, 159);
-  pointer-events: none;
+.project-title {
+  font-size: 2.8em;
+  font-family: sans-serif;
+  color: rgb(219, 217, 217);
 }
 
-.project-links-2 {
-  list-style: none;
-}
-.project-links-2 a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 2px;
-  margin-right: 15px;
-  font-size: 1.3em;
-  color: #8096bb;
-}
-/*Project 2*/
-
-.project-2 {
-  padding: 40px;
-  text-align: center;
-  grid-column: 1 / span 1;
-  display: grid;
-  grid-template-columns: 420px;
-  grid-gap: 20px;
-  padding: 10px;
+/* PARTY HUB PROJECT */
+.project-overview-partyhub {
+  padding: 20px;
+  grid-row: 1;
+  grid-column: 2;
+  text-align: right;
 }
 
-.project-description-2 {
+.project-description-partyhub {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.1em;
@@ -159,25 +117,44 @@
   position: relative;
   z-index: 1;
 }
-.project-picture-2 {
+
+.project-picture-partyhub {
+  padding: 20px;
+  grid-row: 1;
+  grid-column: 1;
+  position: relative;
+  filter: opacity(0.5) drop-shadow(0 0 0 #112240);
+}
+.project-picture-partyhub:hover {
+  filter: opacity(1);
+}
+
+/*PARTY HUB WEBSITE PROJECT*/
+
+.project-description-partyhub-website {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  background-color: #112240;
+  padding: 15px;
+  border-radius: 2px;
+  border: #112240 solid 2px;
+  color: rgb(153, 153, 153);
+  font-weight: lighter;
+  position: relative;
+  z-index: 1;
+}
+.project-picture-partyhub-website {
   padding: 20px;
   grid-row: 2;
   grid-column: 2;
   filter: opacity(0.5) drop-shadow(0 0 0 #112240);
 }
-.project-picture-2:hover {
+.project-picture-partyhub-website:hover {
   filter: opacity(1);
 }
-.project-picture-3 {
-  padding: 20px;
-  grid-row: 4;
-  grid-column: 2;
-  filter: opacity(0.5) drop-shadow(0 0 0 #112240);
-}
-.project-picture-3:hover {
-  filter: opacity(1);
-}
-.project-overview-2 {
+
+.project-overview-partyhub-website {
   padding: 20px;
   grid-row: 2;
   grid-column: 1;
@@ -185,60 +162,221 @@
   width: 510px;
 }
 
-.project-overview-3 {
+/* PERSONAL WEBSITE PROJECT. */
+.project-overview-personalwebsite {
+  padding: 20px;
+  grid-row: 3;
+  grid-column: 2;
+  text-align: right;
+}
+
+.project-description-personalwebsite {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  background-color: #112240;
+  padding: 15px;
+  border-radius: 2px;
+  border: #112240 solid 2px;
+  color: rgb(153, 153, 153);
+  font-weight: lighter;
+  position: relative;
+  z-index: 1;
+}
+
+.project-picture-personalwebsite {
+  padding: 20px;
+  grid-row: 3;
+  grid-column: 1;
+  position: relative;
+  filter: opacity(0.5) drop-shadow(0 0 0 #112240);
+}
+.project-picture-personalwebsite:hover {
+  filter: opacity(1);
+}
+
+/* PROJECT EBIOFRAF*/
+
+.project-description-ebiograf {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  background-color: #112240;
+  padding: 15px;
+  border-radius: 2px;
+  border: #112240 solid 2px;
+  color: rgb(153, 153, 153);
+  font-weight: lighter;
+  position: relative;
+  z-index: 1;
+}
+.project-picture-ebiograf {
+  padding: 20px;
+  grid-row: 4;
+  grid-column: 2;
+  filter: opacity(0.5) drop-shadow(0 0 0 #112240);
+}
+.project-picture-ebiograf:hover {
+  filter: opacity(1);
+}
+
+.project-overview-ebiograf {
   padding: 20px;
   grid-row: 4;
   grid-column: 1;
   text-align: left;
   width: 510px;
 }
-.project3 {
-  padding: 40px;
-  text-align: center;
-  grid-column: 1 / span 2;
-  display: grid;
-  grid-template-columns: 430px;
-  grid-gap: 20px;
-  padding: 10px;
-}
 
-.link-container{
+@media (max-width: 1080px) {
+  .portfolio-container {
+    max-width: 80%;
+    left: 0%;
+    right: 0%;
+  }
 
-    padding: 0%;
-}
+  .project-title {
+    font-size: 4.6vw;
+    font-family: sans-serif;
+    color: rgb(219, 217, 217);
+  }
+  .portfolio-container {
+    display: block;
+    grid-template-columns: 0px;
+    grid-gap: 0px;
+    padding: 0px;
+  }
 
+  .portfolio-headline {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    font-size: 3vh;
+  }
+  /*Partyhub Project*/
+  .project-picture-partyhub {
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    position: relative;
+    filter: opacity(0.2) drop-shadow(0 0 0 #112240);
+  }
 
-@media (max-width: 1060px) {
+  .project-overview-partyhub {
+    padding: 20px;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    text-align: center;
+    z-index: 1;
+  }
 
-    .project-picture {
-        padding: 20px;
-        grid-row: 2;
-        grid-column: 1 /span 2;
-        position: relative;
-        filter: opacity(0.5) drop-shadow(0 0 0 #112240);
-      }
-      .project-overview {
-        padding: 20px;
-        grid-row: 1;
-        grid-column: 1 /span 2;
-        text-align: center;
-      }
+  .project-description-partyhub {
+    background-color: #112240;
+    border-radius: 2px;
+    border: #112240 solid 2px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    position: relative;
+    align-items: center;
+    width: 90%;
+    display: inline-block;
+    word-break: break-all;
+    max-width: 550px;
+  }
 
-      .project-picture-2 {
-        padding: 20px;
-        grid-row: 4;
-        grid-column: 1 /span 2;
+  /*Party hub Website Project*/
+  .project-picture-partyhub-website {
+    padding: 20px;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    position: relative;
+    filter: opacity(0.2) drop-shadow(0 0 0 #112240);
+  }
 
-        filter: opacity(0.5) drop-shadow(0 0 0 #112240);
-      }
-      
-      .project-overview-2 {
-        padding: 20px;
-        grid-row: 3;
-        grid-column: 1 /span 2;
+  .project-overview-partyhub-website {
+    padding: 20px;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+  }
 
-        text-align: center;
-        width: 510px;
-      }
-      
+  .project-description-partyhub-website {
+    background-color: #112240;
+    border-radius: 2px;
+    border: #112240 solid 2px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    position: relative;
+    align-items: center;
+    width: 90%;
+    display: inline-block;
+    word-break: break-all;
+    max-width: 550px;
+  }
+
+  /*Personal Website Project*/
+  .project-picture-personalwebsite {
+    padding: 20px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    position: relative;
+    filter: opacity(0.2) drop-shadow(0 0 0 #112240);
+  }
+
+  .project-overview-personalwebsite {
+    padding: 20px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .project-description-personalwebsite {
+    background-color: #112240;
+    border-radius: 2px;
+    border: #112240 solid 2px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    position: relative;
+    align-items: center;
+    width: 90%;
+    display: inline-block;
+    word-break: break-all;
+    max-width: 550px;
+  }
+
+  /*Ebiograf Project*/
+  .project-picture-ebiograf {
+    padding: 20px;
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    position: relative;
+    filter: opacity(0.1) drop-shadow(0 0 0 #112240);
+  }
+
+  .project-overview-ebiograf {
+    padding: 20px;
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    text-align: center;
+    z-index: 1;
+    width: auto;
+
+  }
+
+  .project-description-ebiograf {
+    background-color: #112240;
+    border-radius: 2px;
+    border: #112240 solid 2px;
+    color: rgb(153, 153, 153);
+    font-weight: lighter;
+    position: relative;
+    align-items: center;
+    width: 90%;
+    display: inline-block;
+    word-break: break-all;
+    max-width: 550px;
+  }
 }
