@@ -3,6 +3,7 @@
   /*Flexes new element in column flow.*/
   flex-flow: column;
   height: 60%;
+  width: 100%;
 }
 
 .contact .contact-content {
@@ -24,19 +25,26 @@
   align-items: center;
   font-family: monospace;
   font-size: 1.9em;
-  width: 700px;
-
+  display: flex;
+  text-align: center;
+}
+.contact-headline::after{
+  content: '';
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: rgb(122, 121, 121);
 }
 
+
 .form {
-  display: flex;
-  width: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: rgb(179, 180, 180);
   font-family: monospace;
   font-size: 1.2em;
+
 }
 
 .button-container {
@@ -74,15 +82,10 @@
   }
 
   .form {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(179, 180, 180);
-    font-family: monospace;
-    font-size: 1.2em;
-    overflow: hidden;
+    
+    width: 90%;
+    grid-column: 1 / span 2;
+  
   }
 
 }
