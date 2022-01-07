@@ -97,3 +97,15 @@
 
 
 }
+
+.colored-text{
+  color: #9c581f;
+
+}
+
+.Technologies-list{
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  color: #9c581f;
+}

@@ -1,7 +1,7 @@
 .portfolio {
   display: flex;
   flex-flow: column;
-  height: 170%;
+  height: 190%;
   font-family: monospace;
   width: 100%;
 }
